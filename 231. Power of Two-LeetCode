@@ -1,0 +1,17 @@
+// If That Number is power of two , of course there will be one bit will be one in its binary repersentation
+class Solution {
+    boolean isPower(int n)
+    {
+      return (Integer.bitCount(n) == 1 && n > 0);
+    }
+    public boolean isPowerOfTwo(int n) {
+        if(n<1)
+            return false;
+        else if(isPower(n)==true)
+        {
+           return true;
+        }
+        else 
+        return false;
+    }
+}
