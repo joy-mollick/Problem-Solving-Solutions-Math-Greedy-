@@ -1,0 +1,23 @@
+
+
+ #include <bits/stdc++.h>
+
+    using namespace std;
+
+    int main()
+
+    {
+       long long t,a,b,c;
+       cin>>t;
+       while(t--)
+       {
+           cin>>a>>b>>c;
+          if(c%2!=0)
+          {
+              a=a<<1;
+          }
+           long long x=(max(a,b)/min(a,b));
+           cout<<x<<endl;
+       }
+       return 0;
+    }
