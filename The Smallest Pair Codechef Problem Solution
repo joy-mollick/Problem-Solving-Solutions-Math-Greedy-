@@ -1,0 +1,35 @@
+
+
+ #include<bits/stdc++.h>
+
+    using namespace std;
+
+    int main()
+
+    {
+       int t,n,m;
+       cin>>t;
+       while(t--)
+       {
+           cin>>n;
+           set<int>joy;
+           for(int i=0;i<n;i++)
+           {
+               cin>>m;
+               joy.insert(m);
+           }
+           int count=0;
+           int ans=0;
+           for(set<int>::iterator it=joy.begin();it!=joy.end();it++)
+           {
+               count++;
+               ans=ans+(*it);
+               if(count==2)
+               {
+                   break;
+               }
+           }
+
+           cout<<ans<<endl;
+       }
+    }
