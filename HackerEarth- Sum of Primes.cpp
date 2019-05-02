@@ -48,10 +48,11 @@ int main()
 {
     sieve();
     int test,n,i,j;
-    cin>>test;
+    scanf("%d",&test);
     while(test--)
     {
-        cin>>i>>j;
-        cout<<sum_of_primes[j]-sum_of_primes[i-1]<<endl;
+        scanf("%d%d",&i,&j);
+        printf("%lld\n",sum_of_primes[j]-sum_of_primes[i-1]);
     }
 }
+
