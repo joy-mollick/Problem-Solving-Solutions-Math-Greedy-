@@ -23,7 +23,7 @@ int main()
        ll occurence=(n/i);
           occurence=((occurence*(occurence-1))>>1)+occurence;
           ll pro=(i*occurence)%mod;
-          ans=(ans%mod)+(pro%mod);
+          ans=((ans%mod)+(pro%mod))%mod;
     }
     printf("%llu\n",ans);
     return 0;
