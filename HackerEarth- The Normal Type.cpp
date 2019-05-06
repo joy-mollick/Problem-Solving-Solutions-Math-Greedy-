@@ -1,3 +1,11 @@
+/*
+U have to find out the number of subarrays with same distinct elements as an orriginal array .
+when u find the right (forw) index and till index number of distinct elements are k(original array) .Then the all subarray
+with start index back to forw+1,forw+2...forw+n-1 index are same distinct elements .
+So, now start increase back to keep fix right(forw) .if back increase one but number of distinct elemnts are same then again 
+all subarrays start with index back+1 till forw+n-1. So again sub_arrays+=(N-forw)+1;
+By this count . Time Complexity O(n).
+*/
 #include<bits/stdc++.h>
 
 using namespace std;
