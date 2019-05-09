@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// The number of ways , u have to choose cities at least one city so, obviously 2^n-1
+// First find out the sieve of prime numbers and sieve the minimum prime factors of the numbers under 1000000 .Nothing Else 
 
 #define max 1000000007
 
