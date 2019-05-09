@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// The number of ways , u have to choose cities at least one city so, obviously 2^n-1
+// Just sieve of prime number and sort the vector of numbers and find the difference between min and max prime 
 
 #define max 1000000007
 
