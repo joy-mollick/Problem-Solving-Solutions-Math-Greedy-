@@ -1,5 +1,8 @@
 
+/*
+   	Number of unordered pairs till N are exactly the prefix sum of the totient function of N.
 
+*/
 #include <bits/stdc++.h>
 
 using namespace std;
