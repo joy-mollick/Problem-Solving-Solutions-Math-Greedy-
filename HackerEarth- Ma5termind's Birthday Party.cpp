@@ -1,4 +1,13 @@
     #include<bits/stdc++.h>
+/*
+ Here U have to count the number of numbers whose (N-1)! is divisible by N . Now one thing is When N is normal not prime number .Then 
+ N=a*b.Where N>a,b; So , (N-1)! contains a,b .Therefore (N-1)! is divisible by N(a*b) without 4 .4 is composite number But it is not
+ included in this category .
+For Prime number , N can not express as (a*b) So , (N-1)! does not contain a,b .So is not divisible by N.
+Now U have to sieve the number of composite numbers till an index without 4
+
+*/
+
     using namespace std;
     typedef unsigned long long int ll;
     ll mod=1e9+7;
