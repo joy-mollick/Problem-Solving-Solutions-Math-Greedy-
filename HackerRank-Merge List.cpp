@@ -1,3 +1,15 @@
+/*
+nayeemjoy59 1 minute ago
+
+U have to place the numbers from two array in the (n+m) positions . So , first number of ways to put the numbers of first array into the (n+m) positions is (n+m)Cn .... and then only one way the numbers of second array can be put other positions among (n+m) positions where n places have been blocked ... So total way without changing order of two arrays (n+m)Cm * 1 ways = ((n+m)! / (n!)*(m!) )%mod
+
+-> ((n+m)!%mod * ((n!*m!)^-1)%mod))%mod.
+
+Find the mod Inverse of (n!*m!) then multiply it with (n+m)! 
+
+*/
+
+
 #include<bits/stdc++.h>
 
 using namespace std;
