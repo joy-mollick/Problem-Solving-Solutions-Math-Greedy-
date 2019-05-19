@@ -1,3 +1,36 @@
+/*
+We have to find out the summation of all subset number of a given number . So , let's find a pattern which will give us the idea to work out the solution . Assume given number abc
+
+Then all the seven subset numbers will be 
+
+1)  (100*a +10*b + c ) 
+
+2)  ( 10*b +c )
+
+3)  (10*a + b) 
+
+4)  (10*a + c )
+
+5)  a
+
+6) b
+
+7)  c
+
+--------------------------------------------------------------------
+121 a  +  22 b + 4 c
+
+2^0 * 11^2 * a  =  121 a
+
+2^1 * 11^1 * b =   22 b
+
+2^2 * 11^ 0 * c= 4 c
+
+So , pattern we get .That's all . Now do code 
+
+*/
+
+
 #include <bits/stdc++.h>
 
 using namespace std;
