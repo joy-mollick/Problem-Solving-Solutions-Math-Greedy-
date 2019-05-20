@@ -4,25 +4,28 @@ using namespace std;
 
 typedef unsigned long long ll;
 
-char c[]={'a','e','i','o','u'};
+const ll mod=1e9+7;
+
+ll power(ll a,ll b)
+{
+    ll ans=1;
+    while(b)
+    {
+        if(b&1)
+            ans=(ans*a)%mod;
+
+            a=(a*a)%mod;
+            b=b>>1;
+    }
+    return ans;
+}
 
 int main()
 {
-  int n,a;
-  cin>>n;
-  vector<int>arr;
-  for(int i=0;i<n;i++)
-  {
-      cin>>a;
-      arr.push_back(abs(a));
-  }
-  sort(arr.begin(),arr.end());
-  int j=0;
-		long long ans = 0;
-		for(int i = 0;i < n;i++){
-                int x=arr[i];
-			j=upper_bound(arr.begin(),arr.end(),2*x)-arr.begin();
-			ans =ans+max( j - (i+1),0);
-		}
-  cout<<ans<<endl;
+    ll n,a,b,c,time;
+    cin>>a>>b>>time;
+    ll exp=(a+b)/2;
+    ll result= power(exp,time)%mod;
+    cout<<result<<endl;
 }
+
