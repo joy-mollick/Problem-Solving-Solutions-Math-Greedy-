@@ -1,0 +1,40 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+
+{
+     int n;
+     cin>>n;
+     int arr[n];
+     int arb[n];
+     for(int i=0;i<n;i++)
+     {
+         cin>>arr[i];
+     }
+     for(int i=0;i<n;i++)
+     {
+         cin>>arb[i];
+     }
+     sort(arr,arr+n);
+     sort(arb,arb+n);
+     bool ok= true;
+     for(int i=0;i<n;i++)
+     {
+         if(arr[i]>arb[i])
+         {
+             ok=false;
+             break;
+         }
+     }
+     if(ok)
+     {
+         cout<<"Yes"<<endl;
+     }
+     else
+     {
+         cout<<"No"<<endl;
+     }
+    return 0;
+}
