@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int n,k;
+
+bool comp(int a,int b)
+{
+    return (a%k)<(b%k);
+}
+
+int main()
+
+{
+    cin>>n>>k;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    stable_sort(arr,arr+n,comp);
+    for(int j=0;j<n;j++)
+    {
+        cout<<arr[j]<<" ";
+    }
+    cout<<endl;
+    return 0;
+}
