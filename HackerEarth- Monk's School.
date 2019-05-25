@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n,m1,a;
+    cin>>n>>m1;
+    string s,b;
+    vector<string>v;
+    map<string,map<int,string> > m;
+    while(n--)
+    {
+        cin>>s;
+        v.push_back(s);
+    }
+    while(m1--)
+    {
+        cin>>s>>b>>a;
+        m[s][a]=b;
+    }
+    sort(v.begin(),v.end());
+    map<int,string> M;
+    map<int,string>::iterator it;
+    for(int i=0;i<v.size();i++)
+    {
+        cout<<v[i]<<endl;
+        M=m[v[i]];
+        it=M.begin();
+        for(it;it!=M.end();it++)
+        {
+            cout<<(it->second)<<" "<<(it->first)<<endl;
+        }
+    }
+    return 0;
+}
