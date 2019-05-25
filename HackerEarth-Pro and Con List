@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+
+{
+    long long  t,n,a,b;
+    cin>>t;
+    while(t--){
+    long long sumofanger=0;
+    vector<long long>v;
+    cin>>n;
+    while(n--)
+    {
+        cin>>a>>b;
+        sumofanger+=b;
+        v.push_back(a+b);
+    }
+    sort(v.begin(),v.end());
+    long long ans=v[v.size()-1]+v[v.size()-2];
+    ans= ans-sumofanger;
+    cout<<ans<<endl;
+    }
+    return 0;
+}
