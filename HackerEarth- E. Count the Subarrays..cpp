@@ -6,12 +6,12 @@
         ios_base::sync_with_stdio(0);
         cin>>t;
         while(t--){
-            cin>>n>>k;
+            scanf("%lld %lld",&n,&k);
             ll a[n];
             ll pref[n+1];
             pref[0]=0;
             for(i=0;i<n;i++){
-                cin>>a[i];
+                scanf("%lld",&a[i]);
             }
             for(i=1;i<=n;i++){
                 pref[i]=pref[i-1]+a[i-1];
@@ -26,6 +26,6 @@
                //cout<<cal<<" ";
                 ans+=((n+1)-cal);
             }
-            cout<<ans<<endl;
+            ptintf("%lld\n",ans);
         }
     }
